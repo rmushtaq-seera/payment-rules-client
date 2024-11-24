@@ -1,4 +1,4 @@
-package com.almosafer.paymentrules.dto;
+package com.almosafer.paymentrules.client.api.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,16 +12,11 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PaymentRuleDto {
-    private String id;
-    private String title;
-    private List<String> paymentMethods;
-    private String currency;
-    private List<Integer> appIds;
-    private List<Object> conditions;
-    private Object processing;
-    private Integer priority;
-    private Boolean isActive;
-    private Instant createdAt;
-    private Instant updatedAt;
+public class PaymentRuleRequest {
+    String paymentMethod;
+    Integer appId;
+    String currency;
+    String scheme;
+    String localScheme;
+    String provider;
 }

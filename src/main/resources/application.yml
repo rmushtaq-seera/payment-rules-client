@@ -1,1 +1,8 @@
-spring.application.name=payment-rules-webclient
+spring:
+  application:
+    name: payment-rules-client
+server:
+  port: 9292
+config:
+  payment-rules:
+    base-url: http://localhost:9090/payment-rules

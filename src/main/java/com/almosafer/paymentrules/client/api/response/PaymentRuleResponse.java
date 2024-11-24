@@ -1,4 +1,4 @@
-package com.almosafer.paymentrules.client.api.request;
+package com.almosafer.paymentrules.client.api.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PaymentRuleRequest {
+public class PaymentRuleResponse {
     private String id;
     private String title;
     private List<String> paymentMethods;
